@@ -2,16 +2,17 @@
 
 namespace App\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
 
-class MainController
+class MainController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="app_index")
      */
     public function index()
     {
-        return new Response('Hello World');
+        return $this->render('index.html.twig');
     }
 }

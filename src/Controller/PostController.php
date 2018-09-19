@@ -2,12 +2,12 @@
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Routing\Annotation\Route;
 
-class ArticleController
+class PostController
 {
     /**
-     * @Route("/posts")
+     * @Route("/posts", name="post_index")
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function index()
@@ -16,7 +16,7 @@ class ArticleController
     }
 
     /**
-     * @Route("/posts/{slug}")
+     * @Route("/posts/{slug}", name="post_show")
      * @param $slug
      * @return \Symfony\Component\HttpFoundation\Response
      */
