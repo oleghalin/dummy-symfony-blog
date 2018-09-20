@@ -3,37 +3,70 @@
 namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use FOS\UserBundle\Model\User as BaseUser;
+use Gedmo\Timestampable\Traits\TimestampableEntity;
 
 /**
- * @ORM\Table(name="user")
- * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\CategoryRepository")
  */
-class User extends BaseUser
+class Category
 {
+    use TimestampableEntity;
     /**
-     * @ORM\Id
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
-    protected $id;
+    private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Post", mappedBy="user")
+     * @ORM\Column(type="string", length=255)
+     */
+    private $title;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $slug;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Post", mappedBy="category")
      */
     private $posts;
 
     public function __construct()
     {
-        parent::__construct();
-
         $this->posts = new ArrayCollection();
     }
 
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getTitle(): ?string
+    {
+        return $this->title;
+    }
+
+    public function setTitle(string $title): self
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
+
+        return $this;
     }
 
     /**
@@ -48,7 +81,7 @@ class User extends BaseUser
     {
         if (!$this->posts->contains($post)) {
             $this->posts[] = $post;
-            $post->setUser($this);
+            $post->setCategory($this);
         }
 
         return $this;
@@ -60,7 +93,7 @@ class User extends BaseUser
             $this->posts->removeElement($post);
             // set the owning side to null (unless already changed)
             if ($post->getCategory() === $this) {
-                $post->setUser(null);
+                $post->setCategory(null);
             }
         }
 

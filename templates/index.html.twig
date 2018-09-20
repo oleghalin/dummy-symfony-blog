@@ -1,9 +1,5 @@
 {% extends "layouts/base.html.twig" %}
 
-
-{% block title "Hello World Title"|title %}
-
-
 {% block content %}
     <div class="row">
         <div class="col-md-8 blog-main">
@@ -11,7 +7,9 @@
                 Latest Posts
             </h3>
 
-
+            {% for post in posts %}
+                {% include "blog/post/partials/short_post.html.twig" with {post: post} %}
+            {% endfor %}
 
             <nav class="blog-pagination">
                 <a class="btn btn-outline-primary" href="#">Older</a>
