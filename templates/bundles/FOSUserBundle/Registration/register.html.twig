@@ -1,0 +1,10 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% block fos_user_content %}
+<div class="card mb-2">
+    <div class="card-header">
+        Registration
+    </div>
+    {% include "@FOSUser/Registration/register_content.html.twig" %}
+</div>
+{% endblock fos_user_content %}
