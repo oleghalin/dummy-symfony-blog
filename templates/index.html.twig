@@ -12,8 +12,8 @@
             {% endfor %}
 
             <nav class="blog-pagination">
-                <a class="btn btn-outline-primary" href="#">Older</a>
-                <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+                <a class="btn btn-outline-primary {{ app.request.get('page') == 1 ? 'disabled' : '' }}" href="{{ path(app.request.get('_route'), { page: app.request.get('page') - 1 }) }}">Older</a>
+                <a class="btn btn-outline-secondary {{ pagesCount <= app.request.get('page') ? 'disabled' : '' }}" href="{{ path(app.request.get('_route'), { page: app.request.get('page') + 1 }) }}">Newer</a>
             </nav>
 
         </div><!-- /.blog-main -->
