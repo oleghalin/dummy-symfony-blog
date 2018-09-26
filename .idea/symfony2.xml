@@ -3,7 +3,9 @@
   <component name="Symfony2PluginSettings">
     <option name="pathToTranslation" value="var/cache/dev/translations" />
     <option name="directoryToWeb" value="public" />
+    <option name="directoryToApp" value="src" />
     <option name="pluginEnabled" value="true" />
+    <option name="profilerCsvPath" value="" />
     <option name="lastServiceGeneratorLanguage" value="yaml" />
   </component>
 </project>

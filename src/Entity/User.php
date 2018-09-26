@@ -9,7 +9,7 @@ use FOS\UserBundle\Model\User as BaseUser;
 /**
  * @ORM\Table(name="user")
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
- */
+*/
 class User extends BaseUser
 {
     /**
@@ -37,9 +37,9 @@ class User extends BaseUser
     }
 
     /**
-     * @return Collection|Post[]
+     * @return \Doctrine\Common\Collections\ArrayCollection
      */
-    public function getPosts(): Collection
+    public function getPosts(): ArrayCollection
     {
         return $this->posts;
     }

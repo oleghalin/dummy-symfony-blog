@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "00ae6ced0050d265c7c7623cd71a3599",
+    "content-hash": "e69a5a00abba7a5cfca12f0c01fd04d4",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1216,16 +1216,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.5",
+            "version": "2.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "54859fabea8b3beecbb1a282888d5c990036b9e3"
+                "reference": "0578b32b30b22de3e8664f797cf846fc9246f786"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/54859fabea8b3beecbb1a282888d5c990036b9e3",
-                "reference": "54859fabea8b3beecbb1a282888d5c990036b9e3",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0578b32b30b22de3e8664f797cf846fc9246f786",
+                "reference": "0578b32b30b22de3e8664f797cf846fc9246f786",
                 "shasum": ""
             },
             "require": {
@@ -1269,7 +1269,46 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-08-16T20:49:45+00:00"
+            "time": "2018-09-25T20:47:26+00:00"
+        },
+        {
+            "name": "exsyst/swagger",
+            "version": "v0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GuilhemN/swagger.git",
+                "reference": "a02984db5edacdce2b4e09dae5ba8fe17a0e449e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GuilhemN/swagger/zipball/a02984db5edacdce2b4e09dae5ba8fe17a0e449e",
+                "reference": "a02984db5edacdce2b4e09dae5ba8fe17a0e449e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EXSyst\\Component\\Swagger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ener-Getick",
+                    "email": "egetick@gmail.com"
+                }
+            ],
+            "description": "A php library to manipulate Swagger specifications",
+            "time": "2018-07-27T06:40:00+00:00"
         },
         {
             "name": "fig/link-util",
@@ -1635,6 +1674,134 @@
             "time": "2014-01-12T16:20:24+00:00"
         },
         {
+            "name": "knplabs/knp-components",
+            "version": "v1.3.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/knp-components.git",
+                "reference": "fc1755ba2b77f83a3d3c99e21f3026ba2a1429be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/fc1755ba2b77f83a3d3c99e21f3026ba2a1429be",
+                "reference": "fc1755ba2b77f83a3d3c99e21f3026ba2a1429be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "doctrine/mongodb-odm": "~1.0@beta",
+                "doctrine/orm": "~2.4",
+                "doctrine/phpcr-odm": "~1.2",
+                "jackalope/jackalope-doctrine-dbal": "~1.2",
+                "phpunit/phpunit": "~4.2",
+                "ruflin/elastica": "~1.0",
+                "symfony/event-dispatcher": "~2.5",
+                "symfony/property-access": ">=2.3"
+            },
+            "suggest": {
+                "symfony/property-access": "To allow sorting arrays"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Component": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/knp-components/contributors"
+                }
+            ],
+            "description": "Knplabs component library",
+            "homepage": "http://github.com/KnpLabs/knp-components",
+            "keywords": [
+                "components",
+                "knp",
+                "knplabs",
+                "pager",
+                "paginator"
+            ],
+            "time": "2018-09-11T07:54:48+00:00"
+        },
+        {
+            "name": "knplabs/knp-paginator-bundle",
+            "version": "v2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpPaginatorBundle.git",
+                "reference": "f4ece5b347121b9fe13166264f197f90252d4bd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/f4ece5b347121b9fe13166264f197f90252d4bd2",
+                "reference": "f4ece5b347121b9fe13166264f197f90252d4bd2",
+                "shasum": ""
+            },
+            "require": {
+                "knplabs/knp-components": "~1.2",
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.7|~3.0|~4.0",
+                "twig/twig": "~1.12|~2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.35|~5.4.3|~6.4",
+                "symfony/expression-language": "~2.7|~3.0|~4.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Knp\\Bundle\\PaginatorBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/KnpPaginatorBundle/contributors"
+                }
+            ],
+            "description": "Paginator bundle for Symfony to automate pagination and simplify sorting and other features",
+            "homepage": "http://github.com/KnpLabs/KnpPaginatorBundle",
+            "keywords": [
+                "bundle",
+                "knp",
+                "knplabs",
+                "pager",
+                "pagination",
+                "paginator",
+                "symfony"
+            ],
+            "time": "2018-05-16T12:15:58+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.23.0",
             "source": {
@@ -1713,17 +1880,100 @@
             "time": "2017-06-19T01:22:40+00:00"
         },
         {
-            "name": "nesbot/carbon",
-            "version": "2.1.0",
+            "name": "nelmio/api-doc-bundle",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "713c4019b8b53d22f220f4abbaf433205c13e872"
+                "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
+                "reference": "99833189fd963ba75c5b6a99d91fe5485201c0f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/713c4019b8b53d22f220f4abbaf433205c13e872",
-                "reference": "713c4019b8b53d22f220f4abbaf433205c13e872",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/99833189fd963ba75c5b6a99d91fe5485201c0f3",
+                "reference": "99833189fd963ba75c5b6a99d91fe5485201c0f3",
+                "shasum": ""
+            },
+            "require": {
+                "exsyst/swagger": "^0.4.1",
+                "php": "^7.0",
+                "phpdocumentor/reflection-docblock": "^3.1|^4.0",
+                "symfony/framework-bundle": "^3.4|^4.0",
+                "symfony/options-resolver": "^3.4.4|^4.0",
+                "symfony/property-info": "^3.4|^4.0",
+                "zircote/swagger-php": "^2.0.9"
+            },
+            "require-dev": {
+                "api-platform/core": "^2.1.0",
+                "doctrine/annotations": "^1.2",
+                "doctrine/common": "^2.4",
+                "friendsofsymfony/rest-bundle": "^2.0",
+                "jms/serializer-bundle": "^2.0",
+                "sensio/framework-extra-bundle": "^3.0",
+                "symfony/asset": "^3.4|^4.0",
+                "symfony/browser-kit": "^3.4|^4.0",
+                "symfony/cache": "^3.4|^4.0",
+                "symfony/config": "^3.4|^4.0",
+                "symfony/console": "^3.4|^4.0",
+                "symfony/dom-crawler": "^3.4|^4.0",
+                "symfony/form": "^3.4|^4.0",
+                "symfony/phpunit-bridge": "^3.4|^4.0",
+                "symfony/property-access": "^3.4|^4.0",
+                "symfony/stopwatch": "^3.4|^4.0",
+                "symfony/templating": "^3.4|^4.0",
+                "symfony/twig-bundle": "^3.4|^4.0",
+                "symfony/validator": "^3.4|^4.0",
+                "willdurand/hateoas-bundle": "^1.0"
+            },
+            "suggest": {
+                "api-platform/core": "For using an API oriented framework.",
+                "friendsofsymfony/rest-bundle": "For using the parameters annotations."
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nelmio\\ApiDocBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nelmio",
+                    "homepage": "http://nelm.io"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/nelmio/NelmioApiDocBundle/contributors"
+                }
+            ],
+            "description": "Generates documentation for your REST API from annotations",
+            "keywords": [
+                "api",
+                "doc",
+                "documentation",
+                "rest"
+            ],
+            "time": "2018-08-29T23:10:36+00:00"
+        },
+        {
+            "name": "nesbot/carbon",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/briannesbitt/Carbon.git",
+                "reference": "ace4cd4f8d7ffba9beeab8f1e09a6dc8e804c1cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/ace4cd4f8d7ffba9beeab8f1e09a6dc8e804c1cf",
+                "reference": "ace4cd4f8d7ffba9beeab8f1e09a6dc8e804c1cf",
                 "shasum": ""
             },
             "require": {
@@ -1765,7 +2015,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-09-03T13:49:24+00:00"
+            "time": "2018-09-20T07:48:42+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -5443,6 +5693,68 @@
                 "zf2"
             ],
             "time": "2018-04-25T15:33:34+00:00"
+        },
+        {
+            "name": "zircote/swagger-php",
+            "version": "2.0.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zircote/swagger-php.git",
+                "reference": "8b42fdc3d8c5a5e0d1f8d344aa359822c9f085e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/8b42fdc3d8c5a5e0d1f8d344aa359822c9f085e0",
+                "reference": "8b42fdc3d8c5a5e0d1f8d344aa359822c9f085e0",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "*",
+                "php": ">=5.6",
+                "symfony/finder": ">=2.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.8.35 <=5.6",
+                "squizlabs/php_codesniffer": ">=2.7",
+                "zendframework/zend-form": "<2.8"
+            },
+            "bin": [
+                "bin/swagger"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Swagger\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Allen",
+                    "email": "zircote@gmail.com",
+                    "homepage": "http://www.zircote.com"
+                },
+                {
+                    "name": "Bob Fanger",
+                    "email": "bfanger@gmail.com",
+                    "homepage": "http://bfanger.nl"
+                }
+            ],
+            "description": "Swagger-PHP - Generate interactive documentation for your RESTful API using phpdoc annotations",
+            "homepage": "https://github.com/zircote/swagger-php/",
+            "keywords": [
+                "api",
+                "json",
+                "rest",
+                "service discovery"
+            ],
+            "time": "2017-12-01T09:22:05+00:00"
         }
     ],
     "packages-dev": [
@@ -6216,31 +6528,34 @@
         },
         {
             "name": "symfony/panther",
-            "version": "v0.1.0",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/panther.git",
-                "reference": "29cd7655c47acc0a398aba1558590b2e1cf41e34"
+                "reference": "d67f9dbcac173150fe00673e6564b3482762c615"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/panther/zipball/29cd7655c47acc0a398aba1558590b2e1cf41e34",
-                "reference": "29cd7655c47acc0a398aba1558590b2e1cf41e34",
+                "url": "https://api.github.com/repos/symfony/panther/zipball/d67f9dbcac173150fe00673e6564b3482762c615",
+                "reference": "d67f9dbcac173150fe00673e6564b3482762c615",
                 "shasum": ""
             },
             "require": {
                 "facebook/webdriver": "^1.5",
-                "php": ">=7.2",
+                "php": ">=7.1",
                 "symfony/browser-kit": "^4.0",
-                "symfony/process": "^4.0"
+                "symfony/polyfill-php72": "^1.9",
+                "symfony/process": "^3.4 || ^4.0"
             },
             "conflict": {
                 "symfony/browser-kit": "4.1.0"
             },
             "require-dev": {
-                "fabpot/goutte": "^3.2",
+                "fabpot/goutte": "^3.2.3",
+                "guzzlehttp/guzzle": "^6.3",
                 "phpunit/phpunit": "^7.0",
-                "symfony/framework-bundle": "^4.0"
+                "symfony/css-selector": "^3.4 || ^4.0",
+                "symfony/framework-bundle": "^3.4 || ^4.0"
             },
             "type": "library",
             "extra": {
@@ -6268,17 +6583,17 @@
                     "homepage": "https://dunglas.fr"
                 }
             ],
-            "description": "A browser testing and web scrapping library for PHP and Symfony.",
+            "description": "A browser testing and web scraping library for PHP and Symfony.",
             "homepage": "https://dunglas.fr",
             "keywords": [
                 "e2e",
-                "scrapping",
+                "scraping",
                 "selenium",
                 "symfony",
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-07-17T07:25:58+00:00"
+            "time": "2018-09-26T10:35:52+00:00"
         },
         {
             "name": "symfony/phpunit-bridge",
@@ -6480,23 +6795,23 @@
         },
         {
             "name": "symfony/test-pack",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/test-pack.git",
-                "reference": "d09097e80a0166776e03fa145cc433c75ba2290b"
+                "reference": "94d1c2b02f137201cd6a68d290caa38fe3817cba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/test-pack/zipball/d09097e80a0166776e03fa145cc433c75ba2290b",
-                "reference": "d09097e80a0166776e03fa145cc433c75ba2290b",
+                "url": "https://api.github.com/repos/symfony/test-pack/zipball/94d1c2b02f137201cd6a68d290caa38fe3817cba",
+                "reference": "94d1c2b02f137201cd6a68d290caa38fe3817cba",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
                 "symfony/browser-kit": "^3.3|^4.0",
                 "symfony/css-selector": "^3.3|^4.0",
-                "symfony/panther": "^0.1",
+                "symfony/panther": "*",
                 "symfony/phpunit-bridge": "*"
             },
             "type": "symfony-pack",
@@ -6505,7 +6820,7 @@
                 "MIT"
             ],
             "description": "A pack for functional and end-to-end testing within a Symfony app",
-            "time": "2018-09-13T06:50:21+00:00"
+            "time": "2018-09-25T09:21:56+00:00"
         },
         {
             "name": "symfony/var-dumper",
