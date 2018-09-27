@@ -14,6 +14,14 @@ security:
     dev:
       pattern: ^/(_(profiler|wdt)|css|images|js)/
       security: false
+    oauth_token:                                   # Everyone can access the access token URL.
+      pattern: ^/oauth/v2/token
+      security: false
+    api:
+      pattern: ^/api                              # All URLs are protected
+      fos_oauth: true                            # OAuth2 protected resource
+      stateless: true                            # Do no set session cookies
+      anonymous: false
     main:
       pattern: ^/
       logout: true
